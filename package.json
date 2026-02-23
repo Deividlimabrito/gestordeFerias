@@ -1,0 +1,26 @@
+{
+  "name": "gestordeferias",
+  "version": "1.0.0",
+  "description": "��#\u0000g\u0000e\u0000s\u0000t\u0000o\u0000r\u0000d\u0000e\u0000F\u0000e\u0000r\u0000i\u0000a\u0000s\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deividlimabrito/gestordeFerias.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Deividlimabrito/gestordeFerias/issues"
+  },
+  "homepage": "https://github.com/Deividlimabrito/gestordeFerias#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mysql2": "^3.17.4"
+  }
+}
