@@ -21,7 +21,7 @@ function Login() {
                          backgroundPosition: 'center'
                      }}>
                     <div className="p-5 text-center">
-                        <h1 className="display-3 fw-bold mb-3">Gestor de Férias</h1>
+                        <h1 className="display-3 fw-bold mb-3">CRONA</h1>
                         <p className="lead">Organize o descanso da sua equipe com simplicidade e eficiência.</p>
                     </div>
                 </Col>
