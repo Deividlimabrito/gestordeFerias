@@ -52,17 +52,6 @@ O projeto é estruturado em dois componentes principais:
 | React Bootstrap | ^2.10.10 | Componentes Bootstrap |
 | Bootstrap | ^5.3.8 | Framework CSS |
 
-## Roadmap
-
-- [x] Modelagem do Banco de Dados Relacional (MySQL)
-- [x] Criação da API Back-end com Node.js e Express
-- [x] CRUD completo de Colaboradores (Create, Read, Update, Delete)
-- [ ] Construção do Front-end com React
-- [ ] Integração completa Front-end e Back-end
-- [ ] Implementação do agendamento de férias
-- [ ] Validação de conflitos de datas por setor
-- [ ] Sistema de prioridade baseado em data de admissão
-
 ## Configuração e Instalação
 
 ### Pré-requisitos
@@ -76,5 +65,5 @@ O projeto é estruturado em dois componentes principais:
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/Deividlimabrito/gestordeFerias.git
-cd gestordeFerias
+git clone https://github.com/Deividlimabrito/crona.git
+cd crona
