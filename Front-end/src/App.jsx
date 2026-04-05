@@ -1,24 +1,37 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import Login from "./components/Login";
+import Login from "./pages/Login";
+import ForgotPassword from "./pages/ForgotPassword";
 import SidebarLayout from "./components/Sidebar";
-import ForgotPassword from "./components/ForgotPassword";
+import Colaboradores from "./pages/Colaboradores";
+import Empresa from "./pages/Empresa";
 
 function App() {
   return (
     <Router>
       <Routes>
-        {/* Quando abrir o site, vai direto para o Login */}
-        <Route path="/" element={<Login />} />
-        
-        {/* 2. Nova rota para recuperação de senha */}
-        <Route path="/ForgotPassword" element={<ForgotPassword />} />
-        
-        {/* Quando o login for feito, ele vai para cá */}
-        <Route path="/dashboard" element={<SidebarLayout />} />
 
-        {/* Se digitar qualquer outra coisa, volta para o Login */}
-        {/* IMPORTANTE: Esta rota deve ser sempre a ÚLTIMA */}
+        {/* LOGIN */}
+        <Route path="/" element={<Login />} />
+
+        {/* ESQUECI SENHA */}
+        <Route path="/ForgotPassword" element={<ForgotPassword />} />
+
+        {/* DASHBOARD COM SIDEBAR */}
+        <Route path="/dashboard" element={<SidebarLayout />}>
+
+          <Route index element={<h1>Dashboard</h1>} />
+
+          <Route path="colaboradores" element={<Colaboradores />} />
+          <Route path="empresa" element={<Empresa />} />
+
+          {/* Futuras páginas */}
+          {/* <Route path="aprovacoes" element={<Aprovacoes />} /> */}
+          {/* <Route path="conflitos" element={<Conflitos />} /> */}
+
+        </Route>
+
         <Route path="*" element={<Navigate to="/" />} />
+
       </Routes>
     </Router>
   );
